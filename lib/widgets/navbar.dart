@@ -27,7 +27,7 @@ Widget MobileNavBar() {
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Icon(Icons.menu),
+        const Icon(Icons.menu),
         navLogo(),
       ],
     ),
@@ -36,13 +36,19 @@ Widget MobileNavBar() {
 
 Widget DesktopNavBar() {
   return Container(
-    margin: EdgeInsets.symmetric(horizontal: 20,vertical: 10,),
+    margin: const EdgeInsets.symmetric(
+      horizontal: 20,
+      vertical: 10,
+    ),
     // color: Colors.yellow,
     height: 70,
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Icon(Icons.menu),
+        const Icon(
+          Icons.menu,
+          color: Colors.white,
+        ),
         Row(
           children: [
             NavButton('Home'),
@@ -68,7 +74,9 @@ Widget navLogo() {
 
 Widget NavButton(String T1) {
   return Container(
-    margin: EdgeInsets.symmetric(horizontal: 20,),
+    margin: const EdgeInsets.symmetric(
+      horizontal: 20,
+    ),
     child: TextButton(
       child: Text(
         T1,

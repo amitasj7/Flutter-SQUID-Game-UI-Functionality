@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:squid_game/pages/home.dart';
-import 'package:squid_game/widgets/shimmer_effect.dart';
+
+import 'package:squid_game/widgets/splash_screen.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -9,11 +11,15 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+
+
   // This widget is the root of your application.
   @override
+
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'SQUID',
       theme: ThemeData(
 
         // This is the theme of your application.
@@ -28,7 +34,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.pink,
       ),
-      home: shimmer_effect(),
+      home: const Home(),
     );
   }
 }

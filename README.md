@@ -1,8 +1,20 @@
-# squid_game
+## Flutter SQUID Game Ui and functionality
+#         Both Mobile and DeskTop
 
 A new Flutter project.
 
 ## Getting Started
+
+# Pubspec.yaml file dependencies -> 
+#     responsive_builder:
+#     shimmer:
+#     url_launcher:
+#     material_design_icons_flutter:
+
+# android/app/build.gradle -> 
+#  add dependencies ->     implementation "androidx.browser:browser:1.4.0"
+
+# check android\app\src\main\AndroidManifest.xml file 
 
 This project is a starting point for a Flutter application.
 
